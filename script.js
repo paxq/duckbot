@@ -12,15 +12,7 @@ window.onpointermove = event => {
 
 // BUTTONS //
 const docs_page = document.querySelector('.docs');
-let toggled_docs = false;
 
-function toggle_docs() {
-  if (toggled_docs) {
-    docs_page.style.left = '100%';
-    toggled_docs = false;
-  }
-  else {
-    docs_page.style.left = '0%';
-    toggled_docs = true;
-  }
+function  open_docs() {
+  docs_page.style.left = '0%';
 }
