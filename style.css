@@ -132,7 +132,7 @@ p {
   font-size: 50px;
 
   position: absolute;
-  transform: translate(-225px, -59px);
+  transform: translateY(-5px);
 }
 
 #search_bar {
