@@ -118,7 +118,7 @@ p {
 }
 
 .home-button {
-  transform: translate(0px, 0px);
+  transform: translate(+200%, 0px);
   position: absolute;
 }
 /* Search Bar */
