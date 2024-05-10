@@ -20,3 +20,20 @@ function  open_docs() {
 function open_main() {
   docs_page.style.left = '100%';
 }
+
+// Search Bar //
+let search = "";
+let key = "";
+
+function searchQuery(query) {
+  // window.location = `https://google.com/search?q=${encodeURIComponent(query)}`;
+}
+
+content.onkeydown = function(event) {
+  search = document.getElementById("content").innerHTML;
+  key = event.key;
+  if(key == "Enter") {
+    event.preventDefault();
+    searchQuery(search);
+  }
+}
