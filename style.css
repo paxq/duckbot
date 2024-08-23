@@ -16,19 +16,18 @@ p {
 }
 
 /* Screen */
-
 .screen {
-  width: 101%;
-  height: 101%;
+  width: 100%;
+  height: 100%;
 
   position: absolute;
-  transform: translate(-10px, -10px);
 
   z-index: 5;
 
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 /* Universal Items */
@@ -37,7 +36,7 @@ p {
 }
 
 .button {
-  transform: translateY(-200px);
+  /* transform: translateY(-200px); */
 
   margin: 25px;
   padding: 15px 20px 15px 20px;
@@ -65,22 +64,18 @@ p {
 
 /* Main Page */
 .main-content {
-  width: 80%;
-  height: 90%;
-
   display: flex;
   align-items: end;
   justify-content: center;
 }
 
 .welcome-sign {
-  position: absolute;
   top: 25%;
 
   color: white;
 
   padding: 10px;
-  width: 30%;
+  max-width: 30%;
 
   text-align: center;
 }
@@ -88,12 +83,10 @@ p {
 
 /* Documentation Page */
 .docs {
-  width: 101%;
-  height: 101%; 
+  width: 100%;
+  height: 100%;
 
   position: absolute;
-  top: 0%;
-  left: 100%;
 
   background-color: rgb(38, 38, 47);
 
@@ -117,10 +110,6 @@ p {
   flex-direction: row;
 }
 
-.home-button {
-  transform: translate(+200%, 0px);
-  position: absolute;
-}
 /* Search Bar */
 #search_icon {
   color: rgb(123, 123, 129);
@@ -136,9 +125,9 @@ p {
 }
 
 #search_bar {
-  width: 500px;
+  max-width: 500px;
+  min-width: 200px;
   height: 50px;
-  transform: translateX(+80%);
 
   background-color: rgb(38, 38, 47);
   color: rgb(210, 210, 210);
@@ -153,10 +142,16 @@ p {
   box-shadow: 0px 0px 2px 3px rgb(41, 41, 46);
 }
 
+@media (min-width: 700px) {
+  #search_bar {
+    min-width: 500px;
+  }
+}
+
 #content {
   border-radius: 2rem;
   height: 30px;
-  width: 430px;
+  max-width: 430px;
   transform: translateX(+43px);
 
   color: rgb(210, 210, 210);

@@ -14,11 +14,11 @@ const blob = document.getElementById("blob");
 const docs_page = document.querySelector('.docs');
 
 function  open_docs() {
-  docs_page.style.left = '0%';
+  window.location = "./docs.html";
 }
 
 function open_main() {
-  docs_page.style.left = '100%';
+  window.location = "./index.html";
 }
 
 // Search Bar //
